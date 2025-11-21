@@ -1,0 +1,459 @@
+/* Name: Deshawn Bryan 
+     Student ID: 2403216
+     Lecturer/Tutor: Sirisha Badhika
+     Published: 21st November 2025
+*/
+
+/* Root Variables */
+:root {
+  --primary: rgb(12, 35, 56);
+  --accent: rgb(0, 190, 200);
+  --neutral: rgb(245, 247, 250);
+  --text: #0b1720;
+  --gap: 1rem;
+  --base-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /*– Uses the default system font of the OS (like San Francisco on macOS, or Segoe UI on Windows). */
+}
+
+/* Base Layout */
+html, body 
+{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--base-font);
+  color: var(--text);
+  background: linear-gradient(180deg, var(--neutral), #fff 60%);
+  line-height: 1.45;
+}
+
+/*Moves footer to bottom of page*/
+main {
+  flex: 1;
+}
+
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 6px 20px rgba(12, 35, 56, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/*Resizes logo, h1, and navigation items within header*/
+.logo img {
+  height: 42px;
+  border-radius: 6px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.main-nav a.active {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(90deg, rgba(12, 35, 56, 0.95), rgba(0, 190, 200, 0.9));
+  color: white;
+  padding: 2.2rem 0;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/*changes background to a gradient once hovering over link*/
+.hero a:hover {
+  background: linear-gradient(90deg, rgba(22, 148, 226, 0.95), rgba(0, 180, 190, 0.9));
+
+}
+
+/* Footer */
+.site-footer {
+  background: #0b1220;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about{
+  color:inherit;
+  text-decoration:none;
+}
+
+.about1{
+color:inherit;
+}
+
+/*products.css*/
+    .category-section {
+      background: #fff;
+      padding: 2rem 1rem;
+      margin: 2rem 0;
+      border-radius: 12px;
+    }
+    .category-section h3 {
+      margin-bottom: 1rem;
+      color: #0c2338;
+      font-size: 1.4rem;
+    }
+    .category-section .card {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(12,35,56,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .category-section .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: scale-down;
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+      
+    }
+    .category-section .card h4 {
+      margin: 0.3rem 0;
+      font-size: 1.05rem;
+    }
+    .category-section .card .price {
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .products-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .card button:hover {
+      background: linear-gradient(90deg, rgba(22, 148, 226, 0.95), rgba(0, 180, 190, 0.9));
+    }
+/*Cart CSS*/
+.table-container{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.table td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.quantity-input {
+    width: 64px;
+    padding: 0.35rem;
+    border-radius: 6px;
+    border: 1px solid rgba(12, 35, 56, 0.08);
+}
+
+/*# selects element by id instead of class */
+#cart-body button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#cart-body button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+/* Checkout */
+.form-card1{
+flex: 1rem;
+background: #f5f5f5;
+border-radius: 12px;
+padding: 1rem;
+border: 1px solid rgba(0, 0, 0, 0.181);
+margin-top:1rem;
+}
+
+/*(Checkout)comma allows same design to be used to all forms instead of just for the cart summary class */
+.cart-summary, form{
+margin-top: 0.4rem;
+padding: 1rem;
+background: #f5f5f5;
+border-radius: 12px;
+}
+
+form input{
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+form button{
+  margin-top: 0.5rem;
+}
+
+/*about*/
+.inner-container{
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(12,35,56,0.06);
+  display: flex;
+  gap: 20px;
+}
+
+.inner-inner-container{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.inner-container1{
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(12,35,56,0.06);
+  display: flex;
+  gap: 20px;
+}
+
+.inner-inner-container1{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: auto;
+}
+
+/*Login*/
+.form-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(12, 35, 56, 0.04);
+    margin-top: 1rem;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 0.6rem;
+}
+
+.form-row label{
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.input{
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(12, 35, 56, 0.08);
+  font-size: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.btn-outline{
+  color: black;
+  background: #eae9e9;
+}
+
+.outline{
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+/*Register*/
+.form-card {
+background: #fff;
+padding: 1rem;
+border-radius: 10px;
+box-shadow: 0 8px 28px rgba(12, 35, 56, 0.04);
+margin-top: 1rem;
+}
+
+.form-row{
+display: flex;
+flex-direction: column;
+gap: 0.45rem;
+margin-bottom: 0.6rem;
+}
+
+.form-row label{
+font-size: 0.95rem;
+font-weight: 600;
+}
+
+.input{
+padding: 0.6rem;
+border-radius: 8px;
+border: 1px solid rgba(12, 35, 56, 0.08);
+font-size: 1rem;
+}
+
+.form-actions {
+display: flex;
+gap: 0.6rem;
+flex-wrap: wrap;
+}
+
+
+/* Desktop layout */
+@media (min-width:950px)
+{
+  .products-grid{ 
+    display:grid; 
+    grid-template-columns: 
+    repeat(3,1fr); 
+    gap:1rem; 
+  }
+  .container{ 
+    max-width:1200px; 
+    margin:0 auto;
+  }
+  .sidebar{ 
+    width:22%; 
+  }
+  .main{ 
+    width:76%; 
+  }
+}
+
+/* Mobile Layout */
+@media (max-width:600px){
+  .products-grid{ 
+    display:grid; 
+    grid-template-columns:1fr; 
+    gap:.75rem; 
+  }
+  .card img{ 
+      height:120px; 
+      object-fit:cover; 
+  }
+    button.btn-primary{ 
+    width:100%; 
+  }
+    .form-actions a.btn-outline { 
+    display: block;
+    width: 94%; 
+    text-align: center;
+    margin-top: 0.5rem;
+  } 
+  .form-actions a.btn-primary{
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .outline{
+    width: 100%;
+    padding: 0.01rem;
+  }
+  .table th, .table td {
+    font-size: 0.85rem;
+    padding: 0.3rem;
+  }
+
+}
+

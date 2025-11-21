@@ -1,0 +1,141 @@
+<!-- Name: Deshawn Bryan 
+     Student ID: 2403216
+     Lecturer/Tutor: Sirisha Badhika
+     Published: 21st November 2025
+-->
+
+<!--Header-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products ClickSpace</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="ClickSpace logo">
+        <h1>ClickSpace</h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a id="login-link" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Mouse & Mousepads -->
+    <div class="category-section">
+      <h3>Mouses</h3>
+      <div class="products-grid">
+
+        <div class="card">
+          <img src="mouse1.png" alt="Gaming Mouse 1">
+          <h4>Logitech Mouse</h4>
+          <p>With a comfortable and contoured shape, this Logitech ambidextrous wireless mouse feels great in either right or left hand and is far superior to a touchpad</p>
+          <p class="price">$25.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Logitech Mouse', 25, 'mouse1.png')">Buy</button>
+        </div>
+
+        <div class="card">
+          <img src="mouse2.png" alt="Gaming Mouse 2">
+          <h4>TECKNET Ergonomic Mouse</h4>
+          <p>This ergonomic mouse promotes a natural wrist and arm position, minimizing hand fatigue from prolonged use. With a vertical layout, the vertical mouse aids in maintaining a comfortable posture, reducing shoulder and neck strain.</p>
+          <p class="price">$30.00</p>
+          <button class="btn btn-primary" onclick="addToCart('TECKNET Ergonomic Mouse', 30, 'mouse2.png')">Buy</button>
+        </div>
+
+        <div class="card">
+          <img src="mouse3.png" alt="Gaming Mousepad">
+          <h4>AeroCurve Pro</h4>
+          <p>AeroCurve pro allows for comfortable hand posture while being handled with its smooth upwards curvature.</p>
+          <p class="price">$20.00</p>
+          <button class="btn btn-primary" onclick="addToCart('AeroCurve Pro', 20, 'mouse3.png')">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Keyboards -->
+    <div class="category-section">
+      <h3>Keyboards</h3>
+      <div class="products-grid">
+        <div class="card">
+          <img src="keyboard1.png" alt="Mechanical Keyboard 1">
+          <h4>Perixx Keyboard</h4>
+          <p>Split-key and 3-D design matches with to your natural arm and hand positions Integrated palm rest to support your wrists in a comfort position</p>
+          <p class="price">$80.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Perixx Keyboard', 80, 'keyboard1.png')">Buy</button>
+        </div>
+        <div class="card">
+          <img src="keyboard2.png" alt="Mechanical Keyboard 2">
+          <h4>Incase Sculpt Ergonomic Keyboard </h4>
+          <p>The Sculpt Ergonomic Keyboard is crafted to enhance productivity and performance, promoting a relaxed and comfortable computing experience.</p>
+          <p class="price">$90.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Incase Sculpt Ergonomic Keyboard', 90, 'keyboard2.png')">Buy</button>
+        </div>
+        <div class="card">
+          <img src="keyboard3.png" alt="Mechanical Keyboard 3">
+          <h4>Iris LM - Low-Profile Split Ergonomic Keyboard</h4>
+          <p>The Iris LM is a keyboard split into two sections designed for optimal comfortability and range in both customability and control of one's workspace.</p>
+          <p class="price">$85.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Split Ergonomic Keyboard', 85, 'keyboard3.png')">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chairs -->
+    <div class="category-section">
+      <h3>Chairs</h3>
+      <div class="products-grid">
+        <div class="card">
+          <img src="chair1.png" alt="Ergonomic Chair 1">
+          <h4>PatioMage Ergonomic Office Chair</h4>
+          <p>This ergonomic design based on human body curve and real needs from customers makes it is easier to work in comfort by freely adjusting the headrest,lumbar support,armrest,seat depth & heigth.</p>
+          <p class="price">$200.00</p>
+          <button class="btn btn-primary" onclick="addToCart('PatioMage Ergonomic Office Chair', 200, 'chair1.png')">Buy</button>
+        </div>
+        <div class="card">
+          <img src="chair2.png" alt="Ergonomic Chair 2">
+          <h4>Branch Ergonomic Chair</h4>
+          <p> This innovative design ensures optimum ergonomics - an adjustable seat, backrest, and armrests for support while smooth-rolling wheels offer easy mobility.</p>
+          <p class="price">$220.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Branch Ergonomic Chair', 220, 'chair2.png')">Buy</button>
+        </div>
+        <div class="card">
+          <img src="chair3.png" alt="Ergonomic Chair 3">
+          <h4>HUANUO Ergonomic Mesh Office Chair </h4>
+          <p>This ergonomic office chair achieve perfect lower back support with innovative lumbar system, features a 2.75-inch adjustment range and five precise levels. The mesh office chair can help to release your spinal pressure and is suitable for those who need to sit for more than 8 hours daily. </p>
+          <p class="price">$210.00</p>
+          <button class="btn btn-primary" onclick="addToCart('HUANUO Ergonomic Mesh Office Chair', 210, 'chair3.png')">Buy</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--Footer-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+       	<p>&copy; 2025 ClickSpace</p>
+      <div>
+        <a href="about.html" class = "about">About</a> · <a href="checkout.html" class = "about1">Checkout</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

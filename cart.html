@@ -1,0 +1,76 @@
+<!-- Name: Deshawn Bryan 
+     Student ID: 2403216
+     Lecturer/Tutor: Sirisha Badhika
+     Published: 21st November 2025
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Cart ClickSpace</title>
+  <link rel="stylesheet" href="style.css" />
+
+<!--Header-->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="ClickSpace logo">
+        <h1>ClickSpace</h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a class="active" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a id="login-link" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!--Table layout-->
+  <main class="container">
+    <h2>Shopping Cart</h2>
+    <div class = "table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+            <th>Discount</th>
+            <th>Tax</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+    </div>
+
+
+    <div class="cart-summary" id="cart-summary"></div>
+    <button class = "btn btn-primary" id="checkout-btn" onclick="goToCheckout()">Checkout</button>
+  </main>
+
+<!--Footer-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+       	<p>&copy; 2025 ClickSpace</p>
+      <div>
+        <a href="about.html" class = "about">About</a> · <a href="checkout.html" class = "about1">Checkout</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Link to combined JS -->
+  <script src="script.js"></script>
+</body>
+</html>

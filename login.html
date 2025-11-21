@@ -1,0 +1,71 @@
+<!-- Name: Deshawn Bryan 
+     Student ID: 2403216
+     Lecturer/Tutor: Sirisha Badhika
+     Published: 21st November 2025
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login ClickSpace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!--Header-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="ClickSpace logo">
+        <h1>ClickSpace</h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart<span id="cart-count" class="badge">0</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a id="login-link" href="login.html" class = "active">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Login setion-->
+  <main class="container">
+    <h2 style="margin-top:1rem">Login</h2>
+    <div class="form-card" style="max-width:480px">
+      <form id="login-form" aria-label="Login form">
+        <div class="form-row">
+          <label for="username">Username</label>
+          <input id="username" name="username" class="input">
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" name="password" class="input" type="password">
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Login</button>
+          <div class = "outline">
+            <a class="btn btn-outline" href="register.html">Register</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+<!--Footer-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+       	<p>&copy; 2025 ClickSpace</p>
+      <div>
+        <a href="about.html" class = "about">About</a> · <a href="checkout.html" class = "about1">Checkout</a>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
