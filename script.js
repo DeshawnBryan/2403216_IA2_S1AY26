@@ -166,7 +166,7 @@ function renderCart()
     //DOM Manipulating
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td><img src="../Assets/${item.img}" alt="${item.name}"></td>
+      <td><img src="${item.img}" alt="${item.name}"></td>
       <td>${item.name}</td>
       <td>$${item.price.toFixed(2)}</td>
       <td><input type="number" class="quantity-input" min="1" value="${item.qty}" onchange="updateQty(${index}, this.value)"></td>
@@ -339,3 +339,4 @@ function renderCheckoutSummary()
     <p><strong>Grand Total: $${totalSum.toFixed(2)}</strong></p>
   `;
 }
+
